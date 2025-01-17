@@ -1,0 +1,72 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --primary-color: #ff5722;
+    --secondary-color: #212121;
+    --font-family: 'Arial, sans-serif';
+    --footer-bg: #333;
+    --footer-text-color: #fff;
+    --footer-link-hover: #ff5722;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family);
+    background-color: #f4f4f4;
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--footer-link-hover);
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: var(--footer-link-hover);
+}
