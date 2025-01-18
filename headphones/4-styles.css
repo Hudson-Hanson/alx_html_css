@@ -13,6 +13,7 @@
     --footer-bg: #333;
     --footer-text-color: #fff;
     --footer-link-hover: #ff5722;
+    --animation-duration: 3s;
 }
 
 /* Global Styles */
@@ -21,6 +22,62 @@ body {
     background-color: #f4f4f4;
     color: var(--secondary-color);
     line-height: 1.6;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+/* Containers */
+.service-container, .results-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Items Styling */
+.service, .result {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 250px;
+}
+
+/* Hover and Scaling Animation */
+.service:hover, .result:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.9;
+}
+
+/* Continuous Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.service, .result {
+    animation: bounce var(--animation-duration) infinite;
 }
 
 /* Footer Styles */
