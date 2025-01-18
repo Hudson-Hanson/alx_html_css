@@ -1,0 +1,50 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Section Styling */
+.our-results {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.our-results h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Pentagon Container */
+.pentagon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Pentagon Style */
+.pentagon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Optional: Hover Effect */
+.pentagon:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
